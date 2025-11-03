@@ -1,18 +1,18 @@
-name:"Branch commit notifer"
+name: Branch Commit Notifier
 
-on: 
+on:
   push:
     branches:
-      - '**' #trigger on all branches
+      - '**'  # trigger on all branches
 
 jobs:
   branch-commit-notifier-job:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "checkout code"
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: "print current branch name"
+      - name: Print current branch name
         run: |
-          echo "A commit was pushed on brach: ${{ github.ref_name}}"
+          echo "A commit was pushed on branch: ${{ github.ref_name }}"
