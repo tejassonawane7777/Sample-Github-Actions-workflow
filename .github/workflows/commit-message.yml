@@ -14,5 +14,5 @@ jobs:
         uses: actions/checkout@v3
 
       - name: "print current branch name"
-        runs: |
+        run: |
           echo "A commit was pushed on brach: ${{ github.ref_name}}"
