@@ -3,7 +3,7 @@ name:"Branch commit notifer"
 on: 
   push:
     branches:
-      -'**' #trigger on all branches
+      - '**' #trigger on all branches
 
 jobs:
   branch-commit-notifier-job:
